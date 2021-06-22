@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #3a4a4f;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #3a95be;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+.links, .box {
+  background-color: white;
+  border-top: 5px solid #3a95be;
+  border-radius: 4px;
+}
+
+.links {
+  margin: 1rem 0;
+}
+
+.links ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.all-boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.links h4, .box h4 {
+  color: #3a4a4f;
+  padding-left: .6rem;
+}
+
+.links p, .box p {
+  color: #3a4a4f;
+  font-size: 1rem;
+  margin: .6rem 0;
+  padding-left: .6rem;
+}
+
+.links .link, .box .link {
+  color: #ed3833;
+  font-size: 1.2rem;
+  padding-left: .6rem;
+}
+
+.box2 .bg {
+  background-color: #ed3833;
+}
+
+.box2 .link {
+  color: white;
+}
+
+.box4 h4 {
+  background-color: #3a95be;
+}
+
+.box1 {
+  grid-row: span 3;
+}
+
+.box1 .img {
+  text-align: center;
+}
+
+.box1 .img img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+}
+
+.box3 {
+  grid-row: span 2;
+}
+
+.box3 .img {
+  text-align: center;
+}
+
+.box3 .img img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .all-boxes {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 520px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .all-boxes {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+/*# sourceMappingURL=style.css.map */
