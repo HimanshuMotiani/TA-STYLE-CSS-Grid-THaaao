@@ -1,0 +1,101 @@
+.box{
+    background-color: white;
+    border-top: 5px solid $primary;
+    border-radius: 4px;
+}
+.links{
+    @extend .box;
+    margin: 1rem 0;
+    ul{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content:space-around;
+    }
+}
+.all-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: flex-start
+}
+.box{
+    @extend .box;
+    h4{
+        color: $text;
+        padding-left: .6rem;
+    }
+    p{
+        color: $text;
+        font-size: 1rem;
+        margin: .6rem 0;
+        padding-left: .6rem;
+    }
+    .link{
+        color: $secondary;
+        font-size: 1.2rem;
+        padding-left: .6rem;
+    }
+}
+.box2{
+   .bg{
+    background-color: $secondary;  
+    }
+    .link{
+    color: white;
+    }
+}
+.box4{
+    h4{
+        background-color: $primary;
+    }
+}
+.box1{
+    grid-row: span 3;
+    .img{
+        text-align: center;
+        img{
+            border-radius: 50%;
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+}
+.box3{
+    grid-row: span 2;
+.img{
+    text-align: center;
+    img{
+        border-radius: 50%;
+        height: 10rem;
+        width: 10rem;
+    }
+}
+}
+
+@media  screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    html{
+        font-size: 10px;
+    }
+    .all-boxes{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start
+    }
+    
+}
+@media  screen and (max-width: 576px) {
+    .container{
+        max-width: 520px;
+    }
+    html{
+        font-size: 10px;
+    }
+    .all-boxes{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: flex-start
+    }
+    
+}
+
